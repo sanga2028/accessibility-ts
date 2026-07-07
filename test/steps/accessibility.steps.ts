@@ -45,7 +45,7 @@ Given('I have the following URLs and optional selectors', function (dataTable) {
   });
   console.log('Scan Data:', scanData);
 });
-
+//hello abhi i'm here 
 When('I run accessibility scan based on provided data', async function () {
   for (const { url, selectors } of scanData) {
     await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60_000 });
